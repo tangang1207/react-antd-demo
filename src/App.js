@@ -11,6 +11,8 @@ import MyLayout from './components/layout/layout';
 import MyLayout2 from './components/layout/layout2';
 import Navigation from './components/layout/affixbutton';
 
+import MyPagination from './components/layout/pagination';
+
 class App extends Component {
     render() {
         return (
@@ -47,8 +49,10 @@ class App extends Component {
 
 {/*
                 <Navigation />
-*/}
+*
                 <MyLayout2 />
+                */}
+               <MyPagination/>
 
 
 
