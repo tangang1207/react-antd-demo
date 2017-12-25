@@ -9,6 +9,7 @@ import LoadButton from './components/loadbutton';
 import MenuButton from './components/menubutton';
 import MyLayout from './components/layout/layout';
 import MyLayout2 from './components/layout/layout2';
+import Navigation from './components/layout/affixbutton';
 
 class App extends Component {
     render() {
@@ -44,7 +45,15 @@ class App extends Component {
                 <span>布局</span>
                 <MyLayout/>*/}
 
-                <MyLayout/>
+{/*
+                <Navigation />
+*/}
+                <MyLayout2 />
+
+
+
+
+
 
 
 

@@ -3,6 +3,7 @@
  */
 import { Button,Menu, Dropdown, Icon } from 'antd';
 import React, { Component } from 'react';
+const SubMenu = Menu.SubMenu;
 
 class MenuButton extends React.Component{
     constructor(props){
@@ -20,7 +21,14 @@ class MenuButton extends React.Component{
             <Menu onClick={this.handleMenuClick}>
                 <Menu.Item key="1">1st item</Menu.Item>
                 <Menu.Item key="2">2nd item</Menu.Item>
-                <Menu.Item key="3">3rd item</Menu.Item>
+                <Menu.Item key="3" disabled>3rd item</Menu.Item>
+
+                <Menu.Divider />
+                <SubMenu title="sub menu">
+                    <Menu.Item>3rd menu item</Menu.Item>
+                    <Menu.Item>4th menu item</Menu.Item>
+                </SubMenu>
+
             </Menu>
         );
         return(
@@ -28,7 +36,7 @@ class MenuButton extends React.Component{
             <Button type="primary" style={{margin:10}} ghost>primary</Button>
             <Button style={{margin:10}} ghost>secondary</Button>
 
-            <Dropdown overlay={menu} style={{margin:10}}>
+            <Dropdown overlay={menu} placement="topCenter" style={{margin:10}} trigger={['click']}>
                 <Button>
                     Actions <Icon type="down" />
                 </Button>

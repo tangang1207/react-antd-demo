@@ -1,7 +1,7 @@
 /**
  * Created by tangang on 2017/12/25.
  */
-import { Layout, Menu, Breadcrumb, Icon } from 'antd';
+import { Layout, Menu, Breadcrumb, Icon, Switch  } from 'antd';
 import '../../style/layout.less';
 import React, { Component } from 'react';
 const { Header, Content, Footer, Sider } = Layout;
@@ -11,15 +11,32 @@ class Layout2 extends React.Component{
     constructor(props) {
         super(props);
         this.onCollapse = this.onCollapse.bind(this);
+        this.handleClick = this.handleClick.bind(this);
+        this.changeTheme = this.changeTheme.bind(this);
     }
 
     state = {
         collapsed: false,
+        current: 'mail',
+        theme: 'dark',
     };
+
+    changeTheme = (value) => {
+        this.setState({
+            theme: value ? 'dark' : 'light',
+        });
+    }
 
     onCollapse(collapsed){
         console.log(collapsed);
         this.setState({ collapsed: !this.state.collapsed });
+    }
+
+    handleClick = (e) => {
+        console.log('click ', e);
+        this.setState({
+            current: e.key,
+        });
     }
     render(){
         return(
@@ -31,6 +48,13 @@ class Layout2 extends React.Component{
                     trigger={null}
                     style={{ overflow: 'auto', height: '100vh', position: 'fixed', left: 0 }}
                 >
+                    <Switch
+                        checked={this.state.theme === 'dark'}
+                        onChange={this.changeTheme}
+                        checkedChildren="Dark"
+                        unCheckedChildren="Light"
+                    />
+                    <br />
                     <div className="logo" />
                     <Menu theme="dark" defaultSelectedKeys={['1']} mode="inline">
                         <Menu.Item key="1">
@@ -69,6 +93,16 @@ class Layout2 extends React.Component{
                             type={this.state.collapsed ? 'menu-unfold' : 'menu-fold'}
                             onClick={this.onCollapse}
                         />
+                        <Menu
+                            onClick={this.handleClick}
+                            selectedKeys={[this.state.current]}
+                            mode="horizontal"
+                        >
+                            <Menu.Item key="mail">
+                                <Icon type="mail" />Navigation One
+                            </Menu.Item>
+                        </Menu>
+
                     </Header>
                     <Content style={{ margin: '0 16px' }}>
                         <Breadcrumb style={{ margin: '16px 0' }}>
