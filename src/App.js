@@ -7,6 +7,7 @@ import ButtonSize from './components/buttonsize';
 import LoadButton from './components/loadbutton';
 
 import MenuButton from './components/menubutton';
+import MyLayout from './components/layout/layout';
 
 class App extends Component {
     render() {
@@ -38,6 +39,9 @@ class App extends Component {
                 <span> 菜单按钮</span>
                 <br />
                 <MenuButton />
+
+                <span>布局</span>
+                <MyLayout/>
 
 
 
