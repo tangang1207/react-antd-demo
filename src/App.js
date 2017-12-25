@@ -13,6 +13,8 @@ import Navigation from './components/layout/affixbutton';
 
 import MyPagination from './components/layout/pagination';
 
+import MySteps from './components/layout/step';
+
 class App extends Component {
     render() {
         return (
@@ -52,7 +54,9 @@ class App extends Component {
 *
                 <MyLayout2 />
                 */}
-               <MyPagination/>
+                 <MyPagination/>
+
+                <MySteps/>
 
 
 
