@@ -27,6 +27,10 @@ import NormailLoginForm from './components/dataentry/normalloginform';
 
 import RegisterForm from './components/dataentry/registerform';
 
+import AdvancedSearchForm from './components/dataentry/advancedsearchform';
+
+import CollectionPage from './components/dataentry/collectionpage';
+
 class App extends Component {
     render() {
         return (
@@ -68,10 +72,11 @@ class App extends Component {
 
                  <MyPagination/>
 
-                <MySteps/>*/}
+                <MySteps/>
 
                 <MyAutoComplete />
                 <MyCascader />
+
 
                 <br />
 
@@ -83,6 +88,9 @@ class App extends Component {
 
                 <RegisterForm/>
 
+                <AdvancedSearchForm />*/}
+
+                <CollectionPage/>
 
 
 

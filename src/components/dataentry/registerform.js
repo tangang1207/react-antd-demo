@@ -117,7 +117,7 @@ class RegisterForm extends React.Component {
         ));
 
         return (
-            <Form onSubmit={this.handleSubmit}>
+            <Form onSubmit={this.handleSubmit} className="login-form-register">
                 <FormItem
                     {...formItemLayout}
                     label="E-mail">
