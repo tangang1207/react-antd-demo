@@ -25,6 +25,8 @@ import HorizontalLoginForm from './components/dataentry/form';
 
 import NormailLoginForm from './components/dataentry/normalloginform';
 
+import RegisterForm from './components/dataentry/registerform';
+
 class App extends Component {
     render() {
         return (
@@ -78,6 +80,11 @@ class App extends Component {
                 <HorizontalLoginForm />
 
                 <NormailLoginForm />
+
+                <RegisterForm/>
+
+
+
 
 
 

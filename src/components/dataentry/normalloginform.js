@@ -5,7 +5,11 @@ import { Form, Icon, Input, Button, Checkbox } from 'antd';
 
 import React, { Component } from 'react';
 
+import '../../style/layout.less';
+
 const FormItem = Form.Item;
+
+
 
 class NormalLoginForm extends React.Component{
 
