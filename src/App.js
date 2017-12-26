@@ -23,6 +23,8 @@ import MyDataPicker from './components/dataentry/data_picker';
 
 import HorizontalLoginForm from './components/dataentry/form';
 
+import NormailLoginForm from './components/dataentry/normalloginform';
+
 class App extends Component {
     render() {
         return (
@@ -74,6 +76,8 @@ class App extends Component {
                 <MyDataPicker />
 
                 <HorizontalLoginForm />
+
+                <NormailLoginForm />
 
 
 
