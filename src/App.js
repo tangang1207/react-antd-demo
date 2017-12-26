@@ -19,6 +19,8 @@ import MySteps from './components/layout/step';
 
 import MyCascader from './components/dataentry/cascader';
 
+import MyDataPicker from './components/dataentry/data_picker';
+
 class App extends Component {
     render() {
         return (
@@ -64,6 +66,10 @@ class App extends Component {
 
                 <MyAutoComplete />
                 <MyCascader />
+
+                <br />
+
+                <MyDataPicker />
 
 
 
