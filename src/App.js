@@ -21,6 +21,8 @@ import MyCascader from './components/dataentry/cascader';
 
 import MyDataPicker from './components/dataentry/data_picker';
 
+import HorizontalLoginForm from './components/dataentry/form';
+
 class App extends Component {
     render() {
         return (
@@ -70,6 +72,8 @@ class App extends Component {
                 <br />
 
                 <MyDataPicker />
+
+                <HorizontalLoginForm />
 
 
 
