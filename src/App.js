@@ -11,15 +11,19 @@ import MyLayout from './components/layout/layout';
 import MyLayout2 from './components/layout/layout2';
 import Navigation from './components/layout/affixbutton';
 
+import MyAutoComplete from './components/dataentry/autocomplete';
+
 import MyPagination from './components/layout/pagination';
 
 import MySteps from './components/layout/step';
+
+import MyCascader from './components/dataentry/cascader';
 
 class App extends Component {
     render() {
         return (
             <div className="App">
-{/*                <Button type="primary">Button</Button>
+              {/*  <Button type="primary">Button</Button>
                 <Button>Default</Button>
                 <Button type="dashed">Dashed</Button>
                 <Button type="danger">Danger</Button>
@@ -47,16 +51,19 @@ class App extends Component {
                 <MenuButton />
 
                 <span>布局</span>
-                <MyLayout/>*/}
+                <MyLayout/>
 
-{/*
+
                 <Navigation />
-*
+
                 <MyLayout2 />
-                */}
+
                  <MyPagination/>
 
-                <MySteps/>
+                <MySteps/>*/}
+
+                <MyAutoComplete />
+                <MyCascader />
 
 
 
