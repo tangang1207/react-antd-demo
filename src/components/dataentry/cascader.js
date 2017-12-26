@@ -55,7 +55,7 @@ class MyCascader extends React.Component{
             return <span key={option.value}>{label} / </span>;
         });
         return (
-        <Cascader options={options} size="small" expandTrigger="hover"   onChange={onChange} displayRender={displayRender} placeholder="Please select" style={{ width: '100%' }}/>
+        <Cascader options={options} size="small" expandTrigger="hover"  showSearch onChange={onChange} displayRender={displayRender} placeholder="Please select" style={{ width: '100%' }}/>
 
         );
     }
