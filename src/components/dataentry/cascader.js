@@ -14,6 +14,7 @@ const options = [{
         children: [{
             value: 'xihu',
             label: 'West Lake',
+            code: 752100,
         }],
     }],
 }, {
@@ -25,12 +26,18 @@ const options = [{
         children: [{
             value: 'zhonghuamen',
             label: 'Zhong Hua Men',
+            code: 453400,
         }],
     }],
 }];
 
 function onChange(value) {
     console.log(value);
+}
+
+function handleAreaClick(e, label, option) {
+    e.stopPropagation();
+    console.log('clicked', label, option);
 }
 
 class MyCascader extends React.Component{
@@ -48,7 +55,7 @@ class MyCascader extends React.Component{
             return <span key={option.value}>{label} / </span>;
         });
         return (
-        <Cascader options={options} size="small" expandTrigger="hover"   onChange={onChange} placeholder="Please select" />
+        <Cascader options={options} size="small" expandTrigger="hover"   onChange={onChange} displayRender={displayRender} placeholder="Please select" style={{ width: '100%' }}/>
 
         );
     }
