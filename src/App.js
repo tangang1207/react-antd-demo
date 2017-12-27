@@ -30,6 +30,11 @@ import RegisterForm from './components/dataentry/registerform';
 import AdvancedSearchForm from './components/dataentry/advancedsearchform';
 
 import CollectionPage from './components/dataentry/collectionpage';
+import MyInput from './components/dataentry/input';
+
+import MySlider from './components/dataentry/slider';
+
+import MySelect from './components/dataentry/select';
 
 class App extends Component {
     render() {
@@ -88,16 +93,15 @@ class App extends Component {
 
                 <RegisterForm/>
 
-                <AdvancedSearchForm />*/}
+                <AdvancedSearchForm />
 
                 <CollectionPage/>
 
+                <MyInput />
 
+                <MySlider />*/}
 
-
-
-
-
+                <MySelect />
 
 
 
