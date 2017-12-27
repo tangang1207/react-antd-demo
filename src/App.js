@@ -36,6 +36,8 @@ import MySlider from './components/dataentry/slider';
 
 import MySelect from './components/dataentry/select';
 
+import MyTable from './components/dataentry/table';
+
 class App extends Component {
     render() {
         return (
@@ -99,9 +101,11 @@ class App extends Component {
 
                 <MyInput />
 
-                <MySlider />*/}
+                <MySlider />
 
-                <MySelect />
+                <MySelect />*/}
+
+                <MyTable />
 
 
 
